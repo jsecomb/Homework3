@@ -1,9 +1,10 @@
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", generatePassword());
-
+generateBtn.addEventListener("click", generatePassword);
 
 //GeneratePassword function
 
@@ -26,27 +27,22 @@ var fullAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
   
   var uppercaseConfirm = confirm("Would you like to include uppercase letters?");
     if (uppercaseConfirm === false) {
-      fullAlphabet.splice(fullAlphabet.indexOf("A"), 26); //removes Caps from array
+      fullAlphabet.splice(fullAlphabet.indexOf("A"), 26); //removes caps from array
     }
-      console.log(fullAlphabet);
-
 
   var lowercaseConfirm = confirm("Would you like to include lowercase letters?");
     if (lowercaseConfirm === false) {
       fullAlphabet.splice(fullAlphabet.indexOf("a"), 26); //removes lowercase from array
-      console.log(fullAlphabet);
     }
 
   var numericConfirm = confirm("Would you like to include numbers?");
     if (numericConfirm === false) {
       fullAlphabet.splice(fullAlphabet.indexOf("1"), 10); //removes numbers from array
-      console.log(fullAlphabet);
     }
 
   var specialConfirm = confirm("Would you like to include special characters?");
     if (specialConfirm === false) {
       fullAlphabet.splice(fullAlphabet.indexOf("~"), 29); //removes special characters from array
-      console.log(fullAlphabet);
     }
 
   //declares password variable as an empty array.  
