@@ -45,6 +45,11 @@ var fullAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
       fullAlphabet.splice(fullAlphabet.indexOf("~"), 29); //removes special characters from array
     }
 
+  //If user declines every character type for password, following message is displated
+  if (fullAlphabet = []) {
+    alert("You did not select any character types for your password. Try again.")
+  }
+
   //declares password variable as an empty array.  
   var password = []; 
   
