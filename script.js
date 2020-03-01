@@ -46,7 +46,7 @@ var fullAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
     }
 
   //If user declines every character type for password, following message is displated
-  if (fullAlphabet = []) {
+  if (fullAlphabet.length === 0) {
     alert("You did not select any character types for your password. Try again.")
   }
 
